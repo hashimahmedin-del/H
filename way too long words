@@ -1,0 +1,9 @@
+n=ĺ(input("enter the number of words"))
+for i in range(n):
+ĺword=input("enter the word")
+    l=int(len(word))
+    if l<10:
+        print(word)
+    else:
+        abbreviation=word[0] + str(l-2) + word[-1]
+        print (abbreviation)  
