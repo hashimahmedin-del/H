@@ -1,0 +1,10 @@
+n, h=map(int, input().split())
+w=0
+heights=list(map(int, input().split()))
+for i in heights:
+    if i<=h:
+        w=w+1
+    else:
+        w=w+2
+print(w)           
+        
