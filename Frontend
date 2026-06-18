@@ -1,0 +1,10 @@
+n=int(input())
+s=list(map(int, input().split()))
+a=0
+z=n-1
+while a<z:
+    print(s[a], s[z], end=" ")
+    a+=1
+    z-=1
+if a==z:
+    print(s[a])    
