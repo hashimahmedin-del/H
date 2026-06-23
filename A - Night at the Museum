@@ -1,0 +1,14 @@
+s = input()
+
+current = 0    
+answer = 0
+
+for i in s:
+    target = ord(i) - ord('a')   
+    d = abs(current - target)
+
+    answer += min(d, 26 - d)
+
+    current = target
+
+print(answer)
