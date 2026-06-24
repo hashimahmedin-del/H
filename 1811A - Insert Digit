@@ -1,0 +1,19 @@
+t = int(input())
+
+for l in range(t):
+    n, d = map(int, input().split())
+    s = input()
+
+    done = False
+
+    for i in range(n):
+
+        if int(s[i]) < d:
+            s = s[:i] + str(d) + s[i:]
+            done = True
+            break
+
+    if not done:
+        s = s + str(d)
+
+    print(s)
